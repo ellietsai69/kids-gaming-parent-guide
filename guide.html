@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>引導孩子判斷 | 家長遊戲指南</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .q { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; padding: .7rem 0; border-bottom: 1px dashed var(--border); }
+    .q:last-of-type { border-bottom: none; }
+    .q span { flex: 1 1 260px; }
+    .opts { display: flex; gap: .4rem; }
+    .opts button { font: inherit; font-size: .95rem; border: 1px solid var(--border); background: #fff; border-radius: 999px; padding: .25rem .8rem; cursor: pointer; }
+    .opts button.on[data-v="2"] { background: #e9f7ee; border-color: #3aa55d; }
+    .opts button.on[data-v="1"] { background: #fff6e5; border-color: #f0b44c; }
+    .opts button.on[data-v="0"] { background: #fdecea; border-color: #e2483d; }
+    .result { margin-top: 1rem; padding: .9rem 1.1rem; border-radius: 10px; background: #f2f2ee; font-weight: 600; }
+    .result.green { background: #e9f7ee; } .result.yellow { background: #fff6e5; } .result.red { background: #fdecea; }
+    .age { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .age .card { margin: 0; }
+    blockquote { margin: .6rem 0; padding: .5rem 1rem; border-left: 4px solid var(--tip-border); background: var(--tip-bg); border-radius: 0 8px 8px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧭 引導孩子判斷</h1>
+    <p>教 9～12 歲的孩子自己分辨：什麼是好遊戲？什麼是好影片？</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="games.html">遊戲介紹</a></li>
+      <li><a href="settings.html">保護設定清單</a></li>
+      <li><a href="guide.html" aria-current="page">引導孩子判斷</a></li>
+      <li><a href="sources.html">資料來源</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="key">🔑 目標不是「幫孩子選」，而是讓孩子<strong>自己會判斷</strong>。設定能擋住一部分，但孩子總有一天會自己做選擇，判斷力才是帶得走的保護。</div>
+
+    <h2>🌱 三個引導原則</h2>
+    <ol class="steps">
+      <li><strong>先問，不先說教：</strong>「這個哪裡好玩？」比「這個不好」更能打開話匣子。孩子覺得被理解，才願意聽你的想法。</li>
+      <li><strong>一起看、一起玩：</strong>判斷力是在實際例子中練出來的。每週花一點時間陪孩子看他喜歡的東西，邊看邊聊。</li>
+      <li><strong>把「評分權」交給孩子：</strong>讓孩子當評審，用下面的評分卡打分數、說理由。說得出理由，比結論對不對更重要。</li>
+    </ol>
+
+    <h2>🎮 好遊戲五問</h2>
+    <p>用孩子聽得懂的話問，讓孩子自己回答：</p>
+    <div class="card">
+      <ol class="steps">
+        <li><strong>玩完心情好嗎？</strong>開心、有成就感？還是常常生氣、煩躁？</li>
+        <li><strong>有沒有動腦或創造？</strong>要想策略、蓋東西、跟隊友合作？還是一直重複按同樣的按鈕？</li>
+        <li><strong>會不會一直叫你花錢？</strong>不買就玩不下去、一直跳出「限時特價」、抽獎轉蛋？</li>
+        <li><strong>停得下來嗎？</strong>說好玩三場，真的能停？還是遊戲一直用「再一場就有獎勵」拉住你？</li>
+        <li><strong>一起玩的人友善嗎？</strong>聊天裡有沒有罵人、要你的個人資料、叫你加其他通訊軟體？</li>
+      </ol>
+    </div>
+
+    <h2>📺 好影片五問</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><strong>看完有收穫嗎？</strong>學到東西、笑得很開心、得到靈感？還是看完什麼都記不得？</li>
+        <li><strong>是真的嗎？</strong>標題和縮圖是不是很誇張（「你絕對不敢相信！」「史上最強！」）？內容真的有那麼厲害嗎？</li>
+        <li><strong>是不是在賣東西？</strong>一直介紹某個商品、開箱、說「連結在下面」？這可能是<strong>業配</strong>（廠商付錢請他介紹）。</li>
+        <li><strong>是不是一直在刺激你？</strong>大吼大叫、快速剪接、讓人看了很興奮但很累？會不會讓你覺得自己「不夠好、東西不夠多」？</li>
+        <li><strong>看完想做什麼？</strong>想去試試看、去畫畫、去運動？還是想模仿危險的挑戰、或只想一直看下一支？</li>
+      </ol>
+    </div>
+
+    <h2>🧾 互動評分卡（讓孩子自己按）</h2>
+    <p>選一個遊戲或影片，每題選「是 / 有時候 / 不是」，最後看紅綠燈。<strong>重點是說出理由</strong>，分數只是參考。</p>
+
+    <div class="card" id="card-game">
+      <h3>🎮 遊戲評分卡</h3>
+      <div class="q"><span>玩完心情是好的</span><div class="opts"></div></div>
+      <div class="q"><span>要動腦、合作或創造</span><div class="opts"></div></div>
+      <div class="q"><span>不買東西也能玩得很開心</span><div class="opts"></div></div>
+      <div class="q"><span>說好要停的時候停得下來</span><div class="opts"></div></div>
+      <div class="q"><span>一起玩的人很友善</span><div class="opts"></div></div>
+      <div class="result">還沒評完喔，每一題都選一個答案吧！</div>
+    </div>
+
+    <div class="card" id="card-video">
+      <h3>📺 影片評分卡</h3>
+      <div class="q"><span>看完有學到東西或很開心</span><div class="opts"></div></div>
+      <div class="q"><span>標題和縮圖沒有騙人、不誇張</span><div class="opts"></div></div>
+      <div class="q"><span>不是一直在叫我買東西</span><div class="opts"></div></div>
+      <div class="q"><span>看完覺得舒服，不會很累或很焦慮</span><div class="opts"></div></div>
+      <div class="q"><span>看完想去做點什麼（而且是安全的事）</span><div class="opts"></div></div>
+      <div class="result">還沒評完喔，每一題都選一個答案吧！</div>
+    </div>
+
+    <h2>🚩 紅燈警訊：看到這些要停下來問爸媽</h2>
+    <ul>
+      <li>說要送「<strong>免費 Robux</strong>」「<strong>免費寶石</strong>」，叫你點連結或給密碼（幾乎都是詐騙）</li>
+      <li>有人叫你<strong>私訊、加 LINE / IG / Discord</strong>，或問你住哪、讀哪間學校</li>
+      <li>影片在做<strong>危險挑戰</strong>，或鼓勵你模仿</li>
+      <li>一直強調「<strong>只剩今天</strong>」「<strong>大家都有了</strong>」，讓你很想馬上買</li>
+      <li>內容讓你覺得<strong>害怕、不舒服</strong>，或有人說「不要告訴爸媽」</li>
+    </ul>
+    <div class="tip">💡 跟孩子約定：<strong>說出來不會被罵，也不會被沒收手機。</strong>孩子願意講，比什麼設定都重要。</div>
+
+    <h2>👧👦 依年齡調整引導方式</h2>
+    <div class="age">
+      <div class="card">
+        <h3>約 9 歲：具體、簡單、陪伴</h3>
+        <ul>
+          <li>用<strong>紅綠燈</strong>分類：綠燈可以自己看、黃燈要問爸媽、紅燈不看</li>
+          <li>規則講清楚、少而明確（例如「只看訂閱清單裡的頻道」）</li>
+          <li>大部分時間<strong>一起看</strong>，邊看邊問「你覺得他說的是真的嗎？」</li>
+          <li>多稱讚孩子做出的好判斷：「你發現那是廣告，好厲害！」</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>約 11 歲：講「為什麼」、給更多自主</h3>
+        <ul>
+          <li>聊<strong>商業模式</strong>：遊戲為什麼免費？錢從哪裡來？為什麼要你每天登入？</li>
+          <li>聊<strong>推薦演算法</strong>：為什麼 YouTube 一直推同類型影片？</li>
+          <li>學會辨認<strong>業配</strong>和誇張標題，可以一起「拆解」一支影片</li>
+          <li>讓孩子當評審，寫一段<strong>推薦文</strong>或<strong>負評</strong>給家人</li>
+          <li>討論<strong>同儕壓力</strong>：「大家都在玩」是好理由嗎？</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>💬 可以直接拿來用的問句</h2>
+    <blockquote>「這個遊戲最好玩的是哪個部分？教我玩一次好嗎？」</blockquote>
+    <blockquote>「你覺得這個 YouTuber 為什麼要這樣拍？他想要你做什麼？」</blockquote>
+    <blockquote>「如果這個遊戲不能花錢，還會一樣好玩嗎？」</blockquote>
+    <blockquote>「看完這支影片，你的心情是怎樣？」</blockquote>
+    <blockquote>「如果你是遊戲設計師，你會怎麼讓人一直想玩？你覺得這樣好嗎？」</blockquote>
+
+    <h2>🏠 家庭小活動</h2>
+    <div class="grid">
+      <div class="card"><h3>⭐ 家庭評審會</h3><p>每週一次，孩子輪流推薦一個遊戲或影片，用評分卡打分、說理由，全家一起討論。</p></div>
+      <div class="card"><h3>🔍 業配偵探</h3><p>一起看一支開箱或推薦影片，比賽誰先找到「在賣東西」的線索。</p></div>
+      <div class="card"><h3>📋 我們家的好片清單</h3><p>把全家都覺得好的頻道和遊戲列成清單，貼在冰箱上，無聊時從清單裡選。</p></div>
+      <div class="card"><h3>🧪 演算法小實驗</h3><p>（適合 11 歲）連看三支同類影片，觀察首頁推薦怎麼變，聊聊「是我在選，還是被推著走？」</p></div>
+    </div>
+
+    <h2>⚙️ YouTube 的輔助設定</h2>
+    <p>判斷力需要時間培養，這段期間可以用 YouTube 的設定當保護網：</p>
+    <ul>
+      <li><strong>YouTube Kids：</strong>內容範圍最小，適合年紀較小或剛開始自己看的孩子</li>
+      <li><strong>受監督的 YouTube 帳戶（13 歲以下）：</strong>家長用自己的 Google 帳戶管理，可選內容範圍：
+        <ul>
+          <li><strong>探索（Explore）：</strong>大致適合 9 歲以上，不含直播（首播除外）</li>
+          <li><strong>探索更多（Explore more）：</strong>大致適合 13 歲以上，含直播</li>
+          <li><strong>大部分 YouTube 內容：</strong>幾乎所有影片（18 歲以上內容除外）</li>
+        </ul>
+      </li>
+      <li>可以用 <strong>Google Family Link</strong> 封鎖特定頻道、設定使用時間</li>
+    </ul>
+    <div class="warn">⚠️ 設定的名稱和範圍可能會改版，請以 <a href="sources.html">資料來源</a> 裡的 YouTube 官方說明為準。</div>
+  </main>
+  <footer>
+    資料整理於 2026 年 11 月。評分卡的答案只存在當下的頁面，不會傳到任何地方。
+  </footer>
+  <script>
+    (function () {
+      var labels = [['2', '是'], ['1', '有時候'], ['0', '不是']];
+      ['card-game', 'card-video'].forEach(function (id) {
+        var card = document.getElementById(id);
+        var qs = card.querySelectorAll('.q');
+        var result = card.querySelector('.result');
+        var answers = new Array(qs.length).fill(null);
+        qs.forEach(function (q, i) {
+          var box = q.querySelector('.opts');
+          labels.forEach(function (l) {
+            var b = document.createElement('button');
+            b.type = 'button'; b.dataset.v = l[0]; b.textContent = l[1];
+            b.addEventListener('click', function () {
+              box.querySelectorAll('button').forEach(function (x) { x.classList.remove('on'); });
+              b.classList.add('on');
+              answers[i] = Number(l[0]);
+              update();
+            });
+            box.appendChild(b);
+          });
+        });
+        function update() {
+          if (answers.indexOf(null) !== -1) return;
+          var s = answers.reduce(function (a, b) { return a + b; }, 0);
+          result.className = 'result';
+          if (s >= 8) { result.classList.add('green'); result.textContent = '🟢 綠燈（' + s + ' / 10 分）：看起來是好選擇！說說看你最喜歡它哪裡？'; }
+          else if (s >= 5) { result.classList.add('yellow'); result.textContent = '🟡 黃燈（' + s + ' / 10 分）：有好有壞，跟爸媽聊聊哪幾題讓你猶豫。'; }
+          else { result.classList.add('red'); result.textContent = '🔴 紅燈（' + s + ' / 10 分）：要小心喔！我們一起想想有沒有更好的選擇。'; }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
