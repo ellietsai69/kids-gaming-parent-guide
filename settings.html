@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>保護設定清單 | 家長遊戲指南</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛡️ 保護設定清單</h1>
+    <p>照著做、邊做邊打勾（打勾紀錄只會存在你自己的瀏覽器裡）</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="games.html">遊戲介紹</a></li>
+      <li><a href="settings.html" aria-current="page">保護設定清單</a></li>
+      <li><a href="sources.html">資料來源</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="key">🔑 最可靠的防線是「手機本身的家長控制」，遊戲裡的設定是第二層。尤其 Brawl Stars 幾乎沒有遊戲內的家長控制。</div>
+
+    <p class="progress">完成進度：<span id="done">0</span> / <span id="total">0</span>
+      <button class="reset" type="button" id="reset">清除打勾</button>
+    </p>
+
+    <h2>✅ 第一層：手機設定（最重要，先做這個）</h2>
+
+    <h3>🍎 如果孩子用 iPhone / iPad</h3>
+    <p><strong>前提：</strong>你和孩子要在同一個「家人共享」（Family Sharing）群組裡。</p>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="ios-ask"><span><strong>開啟「購買前詢問」（Ask to Buy）</strong><br>
+        路徑：<code>設定 → 家人 → 點孩子的名字 → 限制 → 購買前詢問</code>，打開「需要購買批准」<br>
+        👉 孩子想買東西時，你會在「訊息」收到通知，由你決定要不要同意</span></label></li>
+      <li><label><input type="checkbox" data-id="ios-time"><span><strong>設定遊戲時間（Time Allowances）</strong><br>
+        2026 年 9 月 iOS 27 改版後，舊的「App 限制」改名為 <strong>Time Allowances</strong>，分成「娛樂、遊戲、社群」三類，可以設每天總時數，再分別調整。<br>
+        👉 時間到了孩子可以按「要求更多時間」，你可以在自己的手機上核准</span></label></li>
+    </ul>
+    <div class="warn">⚠️ iOS 27 的新功能要在<strong>更新完後重新設定一次</strong>才會生效，而且家人共享群組裡的裝置都要更新。</div>
+
+    <h3>🤖 如果孩子用 Android</h3>
+    <p><strong>前提：</strong>在你的手機安裝 <strong>Google Family Link</strong>，並把孩子的帳號連結進來。</p>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="and-buy"><span><strong>購買需要批准</strong><br>
+        路徑：Family Link → 孩子的資料 → <code>控制項 → Google Play → 需要批准</code><br>
+        建議選「<strong>所有內容</strong>」或至少「<strong>應用程式內購買</strong>」</span></label></li>
+      <li><label><input type="checkbox" data-id="and-time"><span><strong>設定單一 App 的時間</strong><br>
+        路徑：<code>螢幕使用時間 → 時間限制 → 應用程式限制</code> → 選 Roblox 或 Brawl Stars → 設定時間</span></label></li>
+    </ul>
+    <div class="warn">⚠️ 購買批准只管得到透過 Google Play 付款的購買；已經安裝或核准過的 App 不會再要求批准。</div>
+
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="no-card"><span>💳 <strong>孩子的手機上不要存你的信用卡</strong><br>
+        Supercell 官方也說，裝置上沒有付款資料就買不了東西。遊戲內購買通常<strong>不能退款</strong>，而且家長要為孩子使用的付款方式負責。</span></label></li>
+    </ul>
+
+    <h2>🧱 第二層：Roblox 設定</h2>
+    <p><strong>作法：</strong>把你的 Roblox 帳號「連結」到孩子的帳號（家長要先用身分證件或信用卡驗證自己是成年人）。<br>
+    路徑：孩子帳號的 <code>設定 → 家長控制 → 新增家長</code>，輸入你的 email。</p>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="rb-link"><span><strong>連結家長帳號</strong></span></label></li>
+      <li><label><input type="checkbox" data-id="rb-spend"><span><strong>每月消費上限：</strong>預設是「沒有限制」❗一定要設。每個月月初重置，餘額不累積</span></label></li>
+      <li><label><input type="checkbox" data-id="rb-notify"><span><strong>開啟消費通知：</strong>孩子花錢時你會即時收到通知（必須連結家長帳號才有）</span></label></li>
+      <li><label><input type="checkbox" data-id="rb-time"><span><strong>每日遊戲時間：</strong><code>設定 → 家長控制 → 孩子的帳號 → 螢幕使用時間 → 管理</code>，以 15 分鐘為單位設定</span></label></li>
+      <li><label><input type="checkbox" data-id="rb-chat"><span><strong>聊天設定：</strong>建議語音聊天設「沒有人」、文字聊天設「只限好友」</span></label></li>
+      <li><label><input type="checkbox" data-id="rb-content"><span><strong>內容成熟度：</strong>用滑桿限制孩子能玩的遊戲內容等級</span></label></li>
+    </ul>
+    <div class="tip">📌 <strong>2026 年的新變化：</strong>
+      <ul>
+        <li>Roblox 現在依年齡分帳號類型：<strong>Roblox Kids</strong>（約 5～8 歲）、<strong>Roblox Select</strong>（約 9～15 歲），保護程度不同</li>
+        <li>要使用聊天功能，必須先通過<strong>年齡驗證</strong></li>
+      </ul>
+    </div>
+    <div class="warn">⚠️ <strong>孩子滿 13 歲後</strong>，消費上限和時間限制就改由孩子自己管理了，記得提前跟孩子建立好習慣。</div>
+
+    <h2>⭐ 第二層：Brawl Stars 設定</h2>
+    <p>Brawl Stars <strong>沒有家長專用的控制面板</strong>，所以要靠手機設定（第一層）加上跟孩子溝通。</p>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="bs-spend"><span><strong>花錢：</strong>完全靠手機的「購買前詢問」或 Family Link 控管（見第一層）</span></label></li>
+      <li><label><input type="checkbox" data-id="bs-chat"><span><strong>聊天：</strong>遊戲沒有語音，但「戰隊（Club）」有文字聊天，可能會遇到陌生人。16 歲以下的帳號只能加入「適合家庭」的戰隊，過濾也比較嚴格</span></label></li>
+      <li><label><input type="checkbox" data-id="bs-talk"><span><strong>跟孩子聊過「三件事」</strong>（見下方）</span></label></li>
+    </ul>
+
+    <div class="card">
+      <h3>🗣️ 教孩子三件事（兩款遊戲都適用）</h3>
+      <ol class="steps">
+        <li>不要在聊天裡講<strong>真實姓名、學校、住址、IG 或 LINE 帳號</strong></li>
+        <li>遇到不舒服的訊息：點該訊息 → 選「<strong>檢舉</strong>」（Report），然後離開，並告訴爸媽</li>
+        <li>有人說要送「免費寶石」或「免費 Robux」幾乎都是<strong>詐騙</strong>，不要點連結、不要給密碼</li>
+      </ol>
+    </div>
+
+    <p>📧 Brawl Stars 遇到購買問題，可以寫信給 Supercell 家長專用信箱：<a href="mailto:parents@supercell.com">parents@supercell.com</a></p>
+
+    <div class="tip">💡 選單名稱可能因手機版本或語言設定略有不同。找不到某個選項時，請參考 <a href="sources.html">資料來源</a> 裡的官方說明。</div>
+  </main>
+  <footer>
+    資料整理於 2026 年 11 月。遊戲和手機系統常改版，請以官方最新說明為準。
+  </footer>
+  <script>
+    (function () {
+      var KEY = 'parent-guide-checklist';
+      var boxes = document.querySelectorAll('ul.checklist input[type="checkbox"]');
+      var saved = {};
+      try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+      function update() {
+        var n = 0;
+        boxes.forEach(function (b) { if (b.checked) n++; });
+        document.getElementById('done').textContent = n;
+        document.getElementById('total').textContent = boxes.length;
+      }
+      boxes.forEach(function (b) {
+        b.checked = !!saved[b.dataset.id];
+        b.addEventListener('change', function () {
+          saved[b.dataset.id] = b.checked;
+          try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+          update();
+        });
+      });
+      document.getElementById('reset').addEventListener('click', function () {
+        saved = {};
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        boxes.forEach(function (b) { b.checked = false; });
+        update();
+      });
+      update();
+    })();
+  </script>
+</body>
+</html>
